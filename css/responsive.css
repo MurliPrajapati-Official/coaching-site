@@ -242,6 +242,42 @@
     grid-template-columns: 1fr;
   }
 
+  /* Responsive CTA layouts (buttons stack on tablet/mobile) */
+  .course-detail__cta,
+  .exam-card__cta,
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-12);
+  }
+
+  .course-detail__cta .btn-primary,
+  .course-detail__cta .btn-outlined,
+  .course-detail__cta .btn-ghost,
+  .exam-card__cta .btn-primary,
+  .exam-card__cta .btn-outlined,
+  .exam-card__cta .btn-ghost,
+  .contact-actions .btn-primary,
+  .contact-actions .btn-outlined,
+  .contact-actions .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .exam-card__header .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Prevent button text overflow on extra small mobile screens */
+  .btn-primary,
+  .btn-outlined,
+  .btn-whatsapp,
+  .btn-dark {
+    white-space: normal;
+  }
+
   /* Admin */
   .admin-layout {
     grid-template-columns: 1fr;
@@ -340,17 +376,6 @@
 
   .testimonials-dots {
     gap: var(--spacing-6);
-  }
-
-  .contact-actions {
-    flex-direction: column;
-  }
-
-  .contact-actions .btn-primary,
-  .contact-actions .btn-outlined,
-  .contact-actions .btn-whatsapp {
-    width: 100%;
-    justify-content: center;
   }
 
   .admin-stats {

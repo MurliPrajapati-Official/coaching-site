@@ -1,0 +1,359 @@
+/* ============================================================
+   PURUSHOTTAM CLASSES — Responsive Breakpoints
+   ============================================================ */
+
+/* ── Small Desktop (≤1024px) ─────────────────────── */
+@media (max-width: 1024px) {
+  :root {
+    --section-gap: 64px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-40);
+  }
+
+  .hero__headline {
+    font-size: var(--text-heading-lg);
+  }
+
+  .hero__visual-card {
+    max-width: 100%;
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-flow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-32);
+  }
+
+  .steps-flow::before {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lead-section__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-32);
+  }
+
+  .course-detail__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exam-card__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-card__sections {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-layout {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Tablet (≤768px) ─────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 48px;
+    --card-padding: 24px;
+    --nav-height: 56px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-16);
+  }
+
+  /* Navigation */
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    padding: var(--spacing-48) 0 var(--spacing-32);
+  }
+
+  .hero__headline {
+    font-size: var(--text-heading);
+  }
+
+  .hero__subheadline {
+    font-size: var(--text-body);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn-primary,
+  .hero__actions .btn-outlined {
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Trust bar */
+  .trust-bar__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Programs */
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Features */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Steps */
+  .steps-flow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-24);
+  }
+
+  .step-card {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--spacing-16);
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-16);
+  }
+
+  /* Testimonials */
+  .testimonial-card__inner {
+    padding: var(--spacing-24);
+  }
+
+  .testimonial-card__quote {
+    font-size: var(--text-body-lg);
+  }
+
+  /* Lead section */
+  .lead-section__inner {
+    padding: var(--spacing-32) var(--spacing-24);
+  }
+
+  .lead-form__row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-32);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--spacing-12);
+    text-align: center;
+  }
+
+  /* Section headers */
+  .section-header__title {
+    font-size: var(--text-heading);
+  }
+
+  .page-header__title {
+    font-size: var(--text-heading);
+  }
+
+  /* Courses */
+  .courses-tabs {
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacing-8);
+  }
+
+  .courses-tab {
+    flex-shrink: 0;
+  }
+
+  .course-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-detail__header {
+    flex-direction: column;
+  }
+
+  /* Exams */
+  .exam-card {
+    padding: var(--spacing-24);
+  }
+
+  .exam-card__header {
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+
+  /* Tuition */
+  .tuition-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* About */
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  /* Admin */
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--color-fog);
+    padding: var(--spacing-12);
+  }
+
+  .admin-sidebar__title {
+    display: none;
+  }
+
+  .admin-sidebar__link {
+    white-space: nowrap;
+    padding: var(--spacing-8) var(--spacing-12);
+    font-size: var(--text-xs);
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-main {
+    padding: var(--spacing-16);
+  }
+
+  .admin-table-container {
+    overflow-x: auto;
+  }
+
+  .admin-table {
+    min-width: 600px;
+  }
+
+  /* Floating CTA */
+  .cta-float {
+    bottom: var(--spacing-16);
+    right: var(--spacing-16);
+  }
+
+  .cta-float__btn {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+/* ── Mobile (≤480px) ─────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --section-gap: 40px;
+    --card-padding: 20px;
+  }
+
+  .hero__headline {
+    font-size: 28px;
+  }
+
+  .trust-bar__inner {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  .trust-bar__item {
+    flex-direction: row;
+    text-align: left;
+    padding: var(--spacing-16);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+  }
+
+  .stats-grid .stat-block {
+    padding: var(--spacing-16);
+  }
+
+  .stat-block__number {
+    font-size: var(--text-heading);
+  }
+
+  .lead-section__inner {
+    padding: var(--spacing-24) var(--spacing-16);
+    border-radius: var(--radius-cards-compact);
+  }
+
+  .navbar__mobile-menu {
+    width: 100%;
+  }
+
+  .testimonials-dots {
+    gap: var(--spacing-6);
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-actions .btn-primary,
+  .contact-actions .btn-outlined,
+  .contact-actions .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,570 @@
+/* ============================================================
+   PURUSHOTTAM CLASSES — Page-Specific Styles
+   Courses, Exams, Tuition, About, Contact
+   ============================================================ */
+
+/* ── Generic Page Header ─────────────────────────── */
+.page-header {
+  padding: var(--spacing-64) 0 var(--spacing-40);
+  text-align: center;
+}
+
+.page-header__title {
+  font-size: var(--text-heading-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-obsidian);
+  margin-bottom: var(--spacing-12);
+}
+
+.page-header__subtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-steel);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: var(--leading-body-lg);
+}
+
+.page-header__breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-24);
+  font-size: var(--text-sm);
+  color: var(--color-steel);
+}
+
+.page-header__breadcrumb a {
+  color: var(--color-steel);
+  text-decoration: none;
+}
+
+.page-header__breadcrumb a:hover {
+  color: var(--color-ink);
+  opacity: 1;
+}
+
+.page-header__breadcrumb-sep {
+  color: var(--color-pebble);
+}
+
+/* ── Courses Page ────────────────────────────────── */
+.courses-tabs {
+  display: flex;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-40);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.courses-tab {
+  padding: var(--spacing-10) var(--spacing-20);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-pebble);
+  background-color: var(--surface-card);
+  font-size: var(--text-body);
+  font-weight: var(--weight-medium);
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  font-family: var(--font-primary);
+}
+
+.courses-tab:hover {
+  border-color: var(--color-graphite);
+}
+
+.courses-tab.active {
+  background-color: var(--color-obsidian);
+  color: var(--color-snow);
+  border-color: var(--color-obsidian);
+}
+
+.course-detail {
+  display: none;
+}
+
+.course-detail.active {
+  display: block;
+}
+
+.course-detail__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-20);
+  margin-bottom: var(--spacing-32);
+}
+
+.course-detail__icon {
+  font-size: 48px;
+}
+
+.course-detail__info {
+  flex: 1;
+}
+
+.course-detail__title {
+  font-size: var(--text-heading);
+  font-weight: var(--weight-bold);
+  color: var(--color-obsidian);
+}
+
+.course-detail__grades {
+  font-size: var(--text-body-lg);
+  color: var(--color-steel);
+  margin-top: var(--spacing-4);
+}
+
+.course-detail__description {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink);
+  line-height: var(--leading-body-lg);
+  margin-top: var(--spacing-12);
+  max-width: 640px;
+}
+
+.course-detail__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-16);
+  margin-bottom: var(--spacing-32);
+}
+
+.course-detail__card-title {
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+  margin-bottom: var(--spacing-16);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.course-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+}
+
+.course-detail__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.course-detail__list-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--color-graphite);
+}
+
+.course-detail__subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+}
+
+.course-detail__boards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-16);
+}
+
+.course-detail__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+  margin-top: var(--spacing-16);
+}
+
+/* ── Exams Page ──────────────────────────────────── */
+.exams-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+
+.exam-card {
+  padding: var(--spacing-36);
+}
+
+.exam-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+  margin-bottom: var(--spacing-24);
+}
+
+.exam-card__icon {
+  font-size: 40px;
+}
+
+.exam-card__titles {
+  flex: 1;
+}
+
+.exam-card__title {
+  font-size: var(--text-heading);
+  font-weight: var(--weight-bold);
+  color: var(--color-obsidian);
+}
+
+.exam-card__fullname {
+  font-size: var(--text-body);
+  color: var(--color-steel);
+  margin-top: var(--spacing-4);
+}
+
+.exam-card__overview {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink);
+  line-height: var(--leading-body-lg);
+  margin-bottom: var(--spacing-24);
+  max-width: 720px;
+}
+
+.exam-card__meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-16);
+  margin-bottom: var(--spacing-24);
+}
+
+.exam-card__meta-item {
+  padding: var(--spacing-16);
+  background-color: var(--surface-canvas);
+  border-radius: var(--radius-badges);
+}
+
+.exam-card__meta-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-steel);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-6);
+}
+
+.exam-card__meta-value {
+  font-size: var(--text-body);
+  font-weight: var(--weight-medium);
+  color: var(--color-obsidian);
+}
+
+.exam-card__sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-24);
+  margin-bottom: var(--spacing-24);
+}
+
+.exam-card__section-title {
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+  margin-bottom: var(--spacing-12);
+}
+
+.exam-card__section-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.exam-card__section-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.exam-card__faculty {
+  padding: var(--spacing-20);
+  background-color: var(--surface-card-muted);
+  border-radius: var(--radius-cards-compact);
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-24);
+}
+
+.exam-card__faculty-label {
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+  margin-bottom: var(--spacing-4);
+}
+
+.exam-card__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+/* ── Tuition Page ────────────────────────────────── */
+.tuition-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-24);
+  margin-bottom: var(--spacing-48);
+}
+
+.tuition-feature-card {
+  padding: var(--spacing-32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.tuition-feature-card__icon {
+  font-size: 40px;
+}
+
+.tuition-feature-card__title {
+  font-size: var(--text-heading-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+}
+
+.tuition-feature-card__description {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink);
+  line-height: var(--leading-body-lg);
+}
+
+.tuition-feature-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+}
+
+.tuition-feature-card__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.tuition-process {
+  margin-bottom: var(--spacing-48);
+}
+
+/* ── About Page ──────────────────────────────────── */
+.about-story {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--spacing-48);
+  align-items: center;
+  margin-bottom: var(--spacing-64);
+}
+
+.about-story__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.about-story__text {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink);
+  line-height: 1.7;
+}
+
+.about-story__visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-16);
+  margin-bottom: var(--spacing-64);
+}
+
+.about-value-card {
+  text-align: center;
+  padding: var(--spacing-32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.about-value-card__icon {
+  font-size: 40px;
+}
+
+.about-value-card__title {
+  font-size: var(--text-subheading);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+}
+
+.about-value-card__text {
+  font-size: var(--text-body);
+  color: var(--color-steel);
+  line-height: 1.6;
+}
+
+.about-timeline {
+  margin-bottom: var(--spacing-64);
+}
+
+.about-timeline__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  padding-left: var(--spacing-32);
+  border-left: 2px solid var(--color-pebble);
+}
+
+.about-timeline__item {
+  position: relative;
+  padding-left: var(--spacing-24);
+}
+
+.about-timeline__item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--spacing-32) - 5px);
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-obsidian);
+}
+
+.about-timeline__year {
+  font-size: var(--text-body);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+}
+
+.about-timeline__text {
+  font-size: var(--text-body);
+  color: var(--color-steel);
+  margin-top: var(--spacing-4);
+  line-height: 1.5;
+}
+
+/* ── Contact Page ────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-32);
+  margin-bottom: var(--spacing-48);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-16);
+}
+
+.contact-info__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-badges);
+  background-color: var(--surface-card-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.contact-info__label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+}
+
+.contact-info__value {
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.contact-info__value a {
+  color: var(--color-ink);
+  text-decoration: none;
+  font-weight: var(--weight-medium);
+}
+
+.contact-info__value a:hover {
+  opacity: 0.7;
+}
+
+.contact-hours {
+  padding: var(--spacing-24);
+  margin-top: var(--spacing-8);
+}
+
+.contact-hours__title {
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-obsidian);
+  margin-bottom: var(--spacing-16);
+}
+
+.contact-hours__grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-8) var(--spacing-20);
+  font-size: var(--text-body);
+}
+
+.contact-hours__day {
+  font-weight: var(--weight-medium);
+  color: var(--color-obsidian);
+}
+
+.contact-hours__time {
+  color: var(--color-steel);
+}
+
+.contact-form-card {
+  padding: var(--spacing-32);
+}
+
+.contact-map {
+  margin-top: var(--spacing-32);
+  border-radius: var(--radius-cards);
+  overflow: hidden;
+  height: 400px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── Quick actions on Contact page ───────────────── */
+.contact-actions {
+  display: flex;
+  gap: var(--spacing-12);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-16);
+}

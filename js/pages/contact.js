@@ -29,9 +29,11 @@ function renderContactPage(container) {
               <div class="contact-info__content">
                 <div class="contact-info__label">Visit Us</div>
                 <div class="contact-info__value">
-                  Swapnashilp Apartment,<br>
-                  B.T. Kawade Road,<br>
-                  Pune, Maharashtra
+                  <a href="https://www.google.com/maps/place/Purushottam+Classes/@18.5116312,73.9070718,18.25z/data=!4m6!3m5!1s0x3bc2c1bf5116007f:0xba3e1440fcf819ec!8m2!3d18.5116312!4d73.9070718!16s%2Fg%2F11l663kfc4?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+                    Swapnashilp Apartment,<br>
+                    B.T. Kawade Road,<br>
+                    Pune, Maharashtra
+                  </a>
                 </div>
               </div>
             </div>
@@ -105,7 +107,7 @@ function renderContactPage(container) {
         <!-- Google Maps -->
         <div class="contact-map animate-on-scroll" id="contact-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.8977!3d18.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMwJzI2LjciTiA3M8KwNTMnNTEuNyJF!5e0!3m2!1sen!2sin!4v1600000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3980998347104!2d73.90488311542718!3d18.511631202517865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bf5116007f%3A0xba3e1440fcf819ec!2sPurushottam%20Classes!5e0!3m2!1sen!2sin!4v1718210000000!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style="border:0;"

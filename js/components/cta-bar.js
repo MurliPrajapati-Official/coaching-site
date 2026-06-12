@@ -15,20 +15,20 @@ function renderCtaBar() {
        aria-label="Chat on WhatsApp"
        title="Chat on WhatsApp"
        id="float-whatsapp">
-      💬
+      ${Icons.whatsapp('icon')}
     </a>
     <a href="tel:${PHONE_NUMBER}"
        class="cta-float__btn cta-float__btn--call"
        aria-label="Call us"
        title="Call Purushottam Classes"
        id="float-call">
-      📞
+      ${Icons.phone('icon')}
     </a>
     <button class="cta-float__btn cta-float__btn--inquiry"
        aria-label="Send inquiry"
        title="Book Consultation"
        id="float-inquiry">
-      📝
+      ${Icons.edit('icon')}
     </button>
   `;
 

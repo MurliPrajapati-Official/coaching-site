@@ -66,7 +66,7 @@ function renderNavbar() {
       </a>
     </div>
     <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" class="btn-whatsapp" target="_blank" rel="noopener" style="margin-top:8px;text-align:center;justify-content:center;">
-      💬 Talk on WhatsApp
+      ${Icons.whatsapp('btn-icon')} Talk on WhatsApp
     </a>
   `;
 

@@ -24,33 +24,33 @@ function renderTuitionPage(container) {
       <div class="container">
         <div class="tuition-features">
           <div class="card tuition-feature-card animate-on-scroll">
-            <div class="tuition-feature-card__icon">👤</div>
+            <div class="tuition-feature-card__icon">${Icons.user('icon')}</div>
             <h3 class="tuition-feature-card__title">One-on-One Learning</h3>
             <p class="tuition-feature-card__description">
               Undivided attention from a dedicated tutor who adapts their teaching style to match your child's learning pace and preferences.
             </p>
             <div class="tuition-feature-card__list">
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>100% focus on your child's needs</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Customized pace — no rushing, no waiting</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Targeted focus on individual weak areas</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Comfortable, familiar learning environment</span>
               </div>
             </div>
           </div>
 
           <div class="card tuition-feature-card animate-on-scroll">
-            <div class="tuition-feature-card__icon">🔄</div>
+            <div class="tuition-feature-card__icon">${Icons.sync('icon')}</div>
             <h3 class="tuition-feature-card__title">Tutor Matching Process</h3>
             <p class="tuition-feature-card__description">
               We carefully match your child with the right tutor based on subject expertise, teaching style, and personality compatibility.
@@ -76,52 +76,52 @@ function renderTuitionPage(container) {
           </div>
 
           <div class="card tuition-feature-card animate-on-scroll">
-            <div class="tuition-feature-card__icon">🕐</div>
+            <div class="tuition-feature-card__icon">${Icons.clock('icon')}</div>
             <h3 class="tuition-feature-card__title">Flexible Timing</h3>
             <p class="tuition-feature-card__description">
               Your schedule, your choice. We offer sessions at times that work best for your family's routine.
             </p>
             <div class="tuition-feature-card__list">
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Morning, afternoon, and evening slots</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Weekend availability</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Schedule adjustments as needed</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Extra sessions before exams</span>
               </div>
             </div>
           </div>
 
           <div class="card tuition-feature-card animate-on-scroll">
-            <div class="tuition-feature-card__icon">📊</div>
+            <div class="tuition-feature-card__icon">${Icons.analytics('icon')}</div>
             <h3 class="tuition-feature-card__title">Personalized Study Plans</h3>
             <p class="tuition-feature-card__description">
               Every student gets a customized roadmap aligned with their academic goals, exam schedule, and learning capacity.
             </p>
             <div class="tuition-feature-card__list">
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Initial diagnostic assessment</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Goal-setting with parents</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Weekly progress reports</span>
               </div>
               <div class="tuition-feature-card__list-item">
-                <span style="color:var(--color-graphite);">✓</span>
+                <span style="color:var(--color-graphite);">${Icons.check('icon')}</span>
                 <span>Monthly review meetings with parents</span>
               </div>
             </div>
@@ -174,10 +174,10 @@ function renderTuitionPage(container) {
             </a>
             <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi, I am interested in home tuition services from Purushottam Classes. Please share details.')}" 
                target="_blank" rel="noopener" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
-              💬 WhatsApp Inquiry
+              ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
             </a>
             <a href="tel:${PHONE_NUMBER}" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
-              📞 Call Now
+              ${Icons.phone('btn-icon')} Call Now
             </a>
           </div>
         </div>

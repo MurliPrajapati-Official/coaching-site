@@ -23,7 +23,7 @@ function renderHomePage(container) {
                 Book Free Academic Consultation
               </a>
               <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" target="_blank" rel="noopener" class="btn-outlined btn-outlined-lg" id="hero-cta-whatsapp">
-                💬 Talk on WhatsApp
+                ${Icons.whatsapp('btn-icon')} Talk on WhatsApp
               </a>
             </div>
             <div class="hero__trust-note">
@@ -73,22 +73,22 @@ function renderHomePage(container) {
       <div class="container">
         <div class="trust-bar__inner stagger-children">
           <div class="trust-bar__item animate-on-scroll">
-            <div class="trust-bar__icon">🏛️</div>
+            <div class="trust-bar__icon">${Icons.academy('icon')}</div>
             <div class="trust-bar__label">Established in 2013</div>
             <div class="trust-bar__sub">Over a decade of trust</div>
           </div>
           <div class="trust-bar__item animate-on-scroll">
-            <div class="trust-bar__icon">👥</div>
+            <div class="trust-bar__icon">${Icons.users('icon')}</div>
             <div class="trust-bar__label">15 Student Batch Limit</div>
             <div class="trust-bar__sub">Personalized attention guaranteed</div>
           </div>
           <div class="trust-bar__item animate-on-scroll">
-            <div class="trust-bar__icon">📋</div>
+            <div class="trust-bar__icon">${Icons.board('icon')}</div>
             <div class="trust-bar__label">Multiple Boards Supported</div>
             <div class="trust-bar__sub">CBSE, ICSE, IGCSE, NIOS & more</div>
           </div>
           <div class="trust-bar__item animate-on-scroll">
-            <div class="trust-bar__icon">🏠</div>
+            <div class="trust-bar__icon">${Icons.home('icon')}</div>
             <div class="trust-bar__label">Home Tuition Available</div>
             <div class="trust-bar__sub">Expert tutors at your doorstep</div>
           </div>
@@ -107,7 +107,7 @@ function renderHomePage(container) {
         <div class="programs-grid stagger-children">
           ${PROGRAMS_OVERVIEW.map(prog => `
             <a href="${prog.link}" class="card program-card animate-on-scroll" id="program-${prog.id}" style="text-decoration:none;">
-              <div class="program-card__icon">${prog.icon}</div>
+              <div class="program-card__icon">${Icons[prog.icon] ? Icons[prog.icon]('icon') : ''}</div>
               <div class="program-card__title">${prog.title}</div>
               <div class="program-card__subtitle">${prog.subtitle}</div>
               <p class="program-card__description">${prog.description}</p>
@@ -128,15 +128,15 @@ function renderHomePage(container) {
         </div>
         <div class="features-grid stagger-children">
           ${[
-            { icon: '🎯', title: 'Personalized Attention', desc: 'Every student receives individual focus. Our teachers understand each child\'s learning style, strengths, and areas for improvement.' },
-            { icon: '👥', title: 'Small Batches (Max 15)', desc: 'Strict batch size limit ensures no student is left behind. More interaction, more practice, and more doubt clearing in every session.' },
-            { icon: '🕐', title: 'Flexible Schedules', desc: 'Morning, afternoon, and evening batches. Weekend options available. We work around your child\'s school schedule and activities.' },
-            { icon: '👨‍🏫', title: 'Experienced Teachers', desc: 'Our faculty brings years of teaching experience with deep expertise in board-specific curricula and exam patterns.' },
-            { icon: '📊', title: 'Progress Tracking', desc: 'Regular assessments, detailed performance reports, and parent-teacher meetings to keep you informed about your child\'s growth.' },
-            { icon: '📚', title: 'Multi-Board Expertise', desc: 'Whether CBSE, ICSE, IGCSE, NIOS, or State Board — our teachers are equipped to handle diverse curricula with equal proficiency.' }
+            { icon: 'target', title: 'Personalized Attention', desc: 'Every student receives individual focus. Our teachers understand each child\'s learning style, strengths, and areas for improvement.' },
+            { icon: 'users', title: 'Small Batches (Max 15)', desc: 'Strict batch size limit ensures no student is left behind. More interaction, more practice, and more doubt clearing in every session.' },
+            { icon: 'clock', title: 'Flexible Schedules', desc: 'Morning, afternoon, and evening batches. Weekend options available. We work around your child\'s school schedule and activities.' },
+            { icon: 'teacher', title: 'Experienced Teachers', desc: 'Our faculty brings years of teaching experience with deep expertise in board-specific curricula and exam patterns.' },
+            { icon: 'analytics', title: 'Progress Tracking', desc: 'Regular assessments, detailed performance reports, and parent-teacher meetings to keep you informed about your child\'s growth.' },
+            { icon: 'books', title: 'Multi-Board Expertise', desc: 'Whether CBSE, ICSE, IGCSE, NIOS, or State Board — our teachers are equipped to handle diverse curricula with equal proficiency.' }
           ].map(f => `
             <div class="card feature-card animate-on-scroll">
-              <div class="feature-card__icon">${f.icon}</div>
+              <div class="feature-card__icon">${Icons[f.icon] ? Icons[f.icon]('icon') : ''}</div>
               <div class="feature-card__title">${f.title}</div>
               <p class="feature-card__description">${f.desc}</p>
             </div>
@@ -183,15 +183,15 @@ function renderHomePage(container) {
         </div>
         <div class="steps-flow stagger-children">
           ${[
-            { num: 1, icon: '📝', title: 'Submit Inquiry', desc: 'Fill out our quick consultation form or reach us on WhatsApp. Tell us about your child\'s needs.' },
-            { num: 2, icon: '📋', title: 'Academic Assessment', desc: 'We assess your child\'s current level, identify strengths and gaps, and understand their learning style.' },
-            { num: 3, icon: '📄', title: 'Personalized Learning Plan', desc: 'A customized study plan is created with clear goals, timelines, and milestones for measurable progress.' },
-            { num: 4, icon: '🎓', title: 'Start Learning', desc: 'Your child begins their journey in a small, focused batch with experienced teachers and regular progress tracking.' }
+            { num: 1, icon: 'edit', title: 'Submit Inquiry', desc: 'Fill out our quick consultation form or reach us on WhatsApp. Tell us about your child\'s needs.' },
+            { num: 2, icon: 'board', title: 'Academic Assessment', desc: 'We assess your child\'s current level, identify strengths and gaps, and understand their learning style.' },
+            { num: 3, icon: 'document', title: 'Personalized Learning Plan', desc: 'A customized study plan is created with clear goals, timelines, and milestones for measurable progress.' },
+            { num: 4, icon: 'academy', title: 'Start Learning', desc: 'Your child begins their journey in a small, focused batch with experienced teachers and regular progress tracking.' }
           ].map(s => `
             <div class="step-card animate-on-scroll">
               <div class="step-card__number">${s.num}</div>
               <div>
-                <div class="step-card__icon">${s.icon}</div>
+                <div class="step-card__icon">${Icons[s.icon] ? Icons[s.icon]('icon') : ''}</div>
                 <div class="step-card__title">${s.title}</div>
                 <div class="step-card__description">${s.desc}</div>
               </div>
@@ -201,7 +201,7 @@ function renderHomePage(container) {
         <div class="cta-strip" style="margin-top:var(--spacing-40);">
           <div class="cta-strip__inner">
             <a href="#contact" class="btn-primary btn-primary-lg" onclick="event.preventDefault();scrollToLeadForm();">Start Your Journey →</a>
-            <a href="tel:${PHONE_NUMBER}" class="btn-outlined">📞 Call Us Now</a>
+            <a href="tel:${PHONE_NUMBER}" class="btn-outlined">${Icons.phone('btn-icon')} Call Us Now</a>
           </div>
         </div>
       </div>

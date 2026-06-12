@@ -176,7 +176,7 @@ function handleLeadSubmit(e) {
   // Show success
   form.innerHTML = `
     <div class="success-message">
-      <div class="success-message__icon">✅</div>
+      <div class="success-message__icon">${Icons.checkCircle('icon')}</div>
       <div class="success-message__title">Thank You!</div>
       <div class="success-message__text">
         Your consultation request has been submitted successfully.<br>
@@ -184,7 +184,7 @@ function handleLeadSubmit(e) {
       </div>
       <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I just submitted an inquiry for ${studentName} (Class ${studentClass}). Looking forward to hearing from you!`)}" 
          target="_blank" rel="noopener" class="btn-whatsapp" style="margin-top:8px;">
-        💬 Message Us on WhatsApp
+        ${Icons.whatsapp('btn-icon')} Message Us on WhatsApp
       </a>
     </div>
   `;

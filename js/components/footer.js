@@ -46,15 +46,15 @@ function renderFooter() {
           <div class="footer__heading">Contact</div>
           <div style="display:flex;flex-direction:column;gap:16px;">
             <div class="footer__contact-item">
-              <span class="footer__contact-icon">📍</span>
+              <span class="footer__contact-icon">${Icons.location('icon')}</span>
               <span>Swapnashilp Apartment,<br>B.T. Kawade Road,<br>Pune, Maharashtra</span>
             </div>
             <div class="footer__contact-item">
-              <span class="footer__contact-icon">📞</span>
+              <span class="footer__contact-icon">${Icons.phone('icon')}</span>
               <a href="tel:${PHONE_NUMBER}" style="color:var(--color-ash);text-decoration:none;">${PHONE_NUMBER}</a>
             </div>
             <div class="footer__contact-item">
-              <span class="footer__contact-icon">💬</span>
+              <span class="footer__contact-icon">${Icons.whatsapp('icon')}</span>
               <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" target="_blank" rel="noopener" style="color:var(--color-ash);text-decoration:none;">WhatsApp Us</a>
             </div>
           </div>

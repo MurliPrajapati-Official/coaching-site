@@ -25,7 +25,7 @@ function renderExamsPage(container) {
           ${EXAMS_DATA.map(exam => `
             <div class="card exam-card animate-on-scroll" id="exam-${exam.id}">
               <div class="exam-card__header">
-                <div class="exam-card__icon">${exam.icon}</div>
+                <div class="exam-card__icon">${Icons[exam.icon] ? Icons[exam.icon]('icon') : ''}</div>
                 <div class="exam-card__titles">
                   <h2 class="exam-card__title">${exam.title}</h2>
                   <div class="exam-card__fullname">${exam.fullName}</div>
@@ -55,7 +55,7 @@ function renderExamsPage(container) {
 
               <div class="exam-card__sections">
                 <div>
-                  <div class="exam-card__section-title">📋 What We Cover</div>
+                  <div class="exam-card__section-title">${Icons.board('icon')} What We Cover</div>
                   <div class="exam-card__section-list">
                     ${exam.features.map(f => `
                       <div class="exam-card__section-item">
@@ -66,7 +66,7 @@ function renderExamsPage(container) {
                   </div>
                 </div>
                 <div>
-                  <div class="exam-card__section-title">🎯 Preparation Strategy</div>
+                  <div class="exam-card__section-title">${Icons.target('icon')} Preparation Strategy</div>
                   <div class="exam-card__section-list">
                     ${exam.strategy.map((s, i) => `
                       <div class="exam-card__section-item">
@@ -79,7 +79,7 @@ function renderExamsPage(container) {
               </div>
 
               <div class="exam-card__faculty">
-                <div class="exam-card__faculty-label">👨‍🏫 Faculty Support</div>
+                <div class="exam-card__faculty-label">${Icons.teacher('icon')} Faculty Support</div>
                 ${exam.faculty}
               </div>
 
@@ -89,9 +89,9 @@ function renderExamsPage(container) {
                 </a>
                 <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I want to know more about ${exam.title} (${exam.fullName}) coaching at Purushottam Classes.`)}" 
                    target="_blank" rel="noopener" class="btn-outlined">
-                  💬 WhatsApp Inquiry
+                  ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
                 </a>
-                <a href="tel:${PHONE_NUMBER}" class="btn-ghost">📞 Call Us</a>
+                <a href="tel:${PHONE_NUMBER}" class="btn-ghost">${Icons.phone('btn-icon')} Call Us</a>
               </div>
             </div>
           `).join('')}
@@ -112,7 +112,7 @@ function renderExamsPage(container) {
               Book Free Consultation
             </a>
             <a href="tel:${PHONE_NUMBER}" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
-              📞 Call Now
+              ${Icons.phone('btn-icon')} Call Now
             </a>
           </div>
         </div>

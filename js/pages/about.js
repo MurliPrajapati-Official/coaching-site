@@ -77,15 +77,15 @@ function renderAboutPage(container) {
         </div>
         <div class="about-values stagger-children" style="margin-top:var(--spacing-40);">
           ${[
-            { icon: '🎯', title: 'Personalized Education', text: 'We believe learning should adapt to the student, not the other way around. Every study plan is tailored to individual strengths, weaknesses, and goals.' },
-            { icon: '🤝', title: 'Trust & Transparency', text: 'Parents entrust us with their children\'s future. We honor that trust with regular progress updates, open communication, and honest feedback.' },
-            { icon: '📈', title: 'Measurable Growth', text: 'Vague promises don\'t help students. We set clear academic milestones, track progress systematically, and celebrate every improvement.' },
-            { icon: '🌱', title: 'Holistic Development', text: 'Beyond grades, we nurture critical thinking, time management, and a genuine love for learning that serves students throughout their lives.' },
-            { icon: '🏠', title: 'Safe Environment', text: 'Our certified facility provides a safe, supportive atmosphere where students feel comfortable asking questions and taking intellectual risks.' },
-            { icon: '🔄', title: 'Continuous Improvement', text: 'We constantly update our teaching methods, curricula, and materials to stay aligned with the latest educational standards and exam patterns.' }
+            { icon: 'target', title: 'Personalized Education', text: 'We believe learning should adapt to the student, not the other way around. Every study plan is tailored to individual strengths, weaknesses, and goals.' },
+            { icon: 'handshake', title: 'Trust & Transparency', text: 'Parents entrust us with their children\'s future. We honor that trust with regular progress updates, open communication, and honest feedback.' },
+            { icon: 'trendingUp', title: 'Measurable Growth', text: 'Vague promises don\'t help students. We set clear academic milestones, track progress systematically, and celebrate every improvement.' },
+            { icon: 'leaf', title: 'Holistic Development', text: 'Beyond grades, we nurture critical thinking, time management, and a genuine love for learning that serves students throughout their lives.' },
+            { icon: 'home', title: 'Safe Environment', text: 'Our certified facility provides a safe, supportive atmosphere where students feel comfortable asking questions and taking intellectual risks.' },
+            { icon: 'sync', title: 'Continuous Improvement', text: 'We constantly update our teaching methods, curricula, and materials to stay aligned with the latest educational standards and exam patterns.' }
           ].map(v => `
             <div class="card about-value-card animate-on-scroll">
-              <div class="about-value-card__icon">${v.icon}</div>
+              <div class="about-value-card__icon">${Icons[v.icon] ? Icons[v.icon]('icon') : ''}</div>
               <div class="about-value-card__title">${v.title}</div>
               <p class="about-value-card__text">${v.text}</p>
             </div>
@@ -135,7 +135,7 @@ function renderAboutPage(container) {
               Book Free Consultation
             </a>
             <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" target="_blank" rel="noopener" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
-              💬 Talk on WhatsApp
+              ${Icons.whatsapp('btn-icon')} Talk on WhatsApp
             </a>
           </div>
         </div>

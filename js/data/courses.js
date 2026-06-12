@@ -7,7 +7,7 @@ const COURSES_DATA = [
     id: 'foundation',
     title: 'Foundation',
     grades: 'Class 1 – 5',
-    icon: '📚',
+    icon: 'books',
     description: 'Building strong academic roots through engaging, activity-based learning that sparks curiosity and builds confidence in young learners.',
     subjects: ['Mathematics', 'English', 'Hindi', 'Marathi', 'EVS / Science'],
     boards: ['CBSE', 'ICSE', 'State Board'],
@@ -30,7 +30,7 @@ const COURSES_DATA = [
     id: 'middle-school',
     title: 'Middle School',
     grades: 'Class 6 – 8',
-    icon: '🔬',
+    icon: 'science',
     description: 'Strengthening analytical thinking and problem-solving skills as students navigate more complex academic challenges across subjects.',
     subjects: ['Mathematics', 'Science', 'English', 'Hindi', 'Sanskrit', 'French', 'Marathi'],
     boards: ['CBSE', 'ICSE', 'IGCSE', 'State Board'],
@@ -53,7 +53,7 @@ const COURSES_DATA = [
     id: 'board-prep',
     title: 'Board Preparation',
     grades: 'Class 9 – 10',
-    icon: '🎯',
+    icon: 'target',
     description: 'Intensive, board-focused preparation designed to maximize scores with strategic exam practice, concept mastery, and time management skills.',
     subjects: ['Mathematics', 'Physics', 'Science', 'English', 'French', 'Hindi', 'Sanskrit', 'Marathi'],
     boards: ['CBSE', 'ICSE', 'IGCSE', 'NIOS', 'State Board'],
@@ -76,7 +76,7 @@ const COURSES_DATA = [
     id: 'senior-secondary',
     title: 'Senior Secondary',
     grades: 'Class 11 – 12',
-    icon: '🎓',
+    icon: 'graduationCap',
     description: 'Advanced subject coaching and entrance exam preparation to bridge school education with higher academic and career goals.',
     subjects: ['Mathematics', 'Physics', 'English'],
     boards: ['CBSE', 'ICSE', 'IGCSE', 'NIOS', 'State Board'],
@@ -103,7 +103,7 @@ const PROGRAMS_OVERVIEW = [
     title: 'School Coaching',
     subtitle: 'Class 1 – 12, All Boards',
     description: 'Comprehensive academic coaching covering CBSE, ICSE, IGCSE, NIOS, and State Board curricula with personalized attention.',
-    icon: '🏫',
+    icon: 'academy',
     link: '#courses'
   },
   {
@@ -111,7 +111,7 @@ const PROGRAMS_OVERVIEW = [
     title: 'Home Tuition',
     subtitle: 'One-on-One, Flexible',
     description: 'Expert tutors at your doorstep. Customized learning plans, flexible scheduling, and personalized academic support.',
-    icon: '🏠',
+    icon: 'home',
     link: '#tuition'
   },
   {
@@ -119,7 +119,7 @@ const PROGRAMS_OVERVIEW = [
     title: 'Competitive Exams',
     subtitle: 'NDA, CAT, CET, Railway',
     description: 'Focused preparation programs for national and state competitive examinations with experienced faculty.',
-    icon: '🏆',
+    icon: 'trophy',
     link: '#exams'
   },
   {
@@ -127,7 +127,7 @@ const PROGRAMS_OVERVIEW = [
     title: 'Language Training',
     subtitle: 'French, Hindi, Sanskrit, Marathi',
     description: 'Build language proficiency with structured programs designed for both academic requirements and conversational fluency.',
-    icon: '🌐',
+    icon: 'globe',
     link: '#courses'
   },
   {
@@ -135,7 +135,7 @@ const PROGRAMS_OVERVIEW = [
     title: 'Higher Education',
     subtitle: 'B.Ed & M.Ed Support',
     description: 'Academic guidance and preparation support for Bachelor and Master of Education programs.',
-    icon: '📖',
+    icon: 'openBook',
     link: '#courses'
   }
 ];

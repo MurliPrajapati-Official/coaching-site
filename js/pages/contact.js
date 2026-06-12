@@ -25,7 +25,7 @@ function renderContactPage(container) {
           <!-- Contact Info -->
           <div class="contact-info animate-on-scroll">
             <div class="contact-info__item">
-              <div class="contact-info__icon">📍</div>
+              <div class="contact-info__icon">${Icons.location('icon')}</div>
               <div class="contact-info__content">
                 <div class="contact-info__label">Visit Us</div>
                 <div class="contact-info__value">
@@ -39,7 +39,7 @@ function renderContactPage(container) {
             </div>
 
             <div class="contact-info__item">
-              <div class="contact-info__icon">📞</div>
+              <div class="contact-info__icon">${Icons.phone('icon')}</div>
               <div class="contact-info__content">
                 <div class="contact-info__label">Call Us</div>
                 <div class="contact-info__value">
@@ -49,7 +49,7 @@ function renderContactPage(container) {
             </div>
 
             <div class="contact-info__item">
-              <div class="contact-info__icon">💬</div>
+              <div class="contact-info__icon">${Icons.whatsapp('icon')}</div>
               <div class="contact-info__content">
                 <div class="contact-info__label">WhatsApp</div>
                 <div class="contact-info__value">
@@ -61,7 +61,7 @@ function renderContactPage(container) {
             </div>
 
             <div class="contact-info__item">
-              <div class="contact-info__icon">✉️</div>
+              <div class="contact-info__icon">${Icons.email('icon')}</div>
               <div class="contact-info__content">
                 <div class="contact-info__label">Email</div>
                 <div class="contact-info__value">
@@ -73,16 +73,16 @@ function renderContactPage(container) {
             <!-- Quick Action Buttons -->
             <div class="contact-actions">
               <a href="tel:${PHONE_NUMBER}" class="btn-primary" id="contact-call-btn">
-                📞 Call Now
+                ${Icons.phone('btn-icon')} Call Now
               </a>
               <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" target="_blank" rel="noopener" class="btn-whatsapp" id="contact-whatsapp-btn">
-                💬 WhatsApp
+                ${Icons.whatsapp('btn-icon')} WhatsApp
               </a>
             </div>
 
             <!-- Operating Hours -->
             <div class="card-muted contact-hours">
-              <div class="contact-hours__title">🕐 Operating Hours</div>
+              <div class="contact-hours__title">${Icons.clock('icon')} Operating Hours</div>
               <div class="contact-hours__grid">
                 <span class="contact-hours__day">Monday – Friday</span>
                 <span class="contact-hours__time">8:00 AM – 8:00 PM</span>

@@ -29,7 +29,7 @@ function renderCoursesPage(container) {
                     role="tab"
                     aria-selected="${i === 0}"
                     id="tab-${course.id}">
-              ${course.icon} ${course.title} (${course.grades})
+              ${Icons[course.icon] ? Icons[course.icon]('btn-icon') : ''} ${course.title} (${course.grades})
             </button>
           `).join('')}
         </div>
@@ -38,7 +38,7 @@ function renderCoursesPage(container) {
         ${COURSES_DATA.map((course, i) => `
           <div class="course-detail ${i === 0 ? 'active' : ''}" id="course-${course.id}" role="tabpanel" aria-labelledby="tab-${course.id}">
             <div class="course-detail__header animate-on-scroll">
-              <div class="course-detail__icon">${course.icon}</div>
+              <div class="course-detail__icon">${Icons[course.icon] ? Icons[course.icon]('icon') : ''}</div>
               <div class="course-detail__info">
                 <h2 class="course-detail__title">${course.title}</h2>
                 <div class="course-detail__grades">${course.grades}</div>
@@ -55,7 +55,7 @@ function renderCoursesPage(container) {
             <div class="course-detail__grid">
               <!-- Subjects -->
               <div class="card animate-on-scroll">
-                <div class="course-detail__card-title">📘 Subjects Offered</div>
+                <div class="course-detail__card-title">${Icons.openBook('icon')} Subjects Offered</div>
                 <div class="course-detail__subjects">
                   ${course.subjects.map(s => `<span class="badge-light">${s}</span>`).join('')}
                 </div>
@@ -63,7 +63,7 @@ function renderCoursesPage(container) {
 
               <!-- Teaching Method -->
               <div class="card animate-on-scroll">
-                <div class="course-detail__card-title">📝 Teaching Method</div>
+                <div class="course-detail__card-title">${Icons.edit('icon')} Teaching Method</div>
                 <div class="course-detail__list">
                   ${course.method.map(m => `
                     <div class="course-detail__list-item">
@@ -76,11 +76,11 @@ function renderCoursesPage(container) {
 
               <!-- Learning Outcomes -->
               <div class="card animate-on-scroll">
-                <div class="course-detail__card-title">🎯 Learning Outcomes</div>
+                <div class="course-detail__card-title">${Icons.target('icon')} Learning Outcomes</div>
                 <div class="course-detail__list">
                   ${course.outcomes.map(o => `
                     <div class="course-detail__list-item">
-                      <span class="course-detail__list-icon">✓</span>
+                      <span class="course-detail__list-icon">${Icons.check('icon')}</span>
                       <span>${o}</span>
                     </div>
                   `).join('')}
@@ -94,9 +94,9 @@ function renderCoursesPage(container) {
               </a>
               <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in ${course.title} (${course.grades}) coaching at Purushottam Classes.`)}" 
                  target="_blank" rel="noopener" class="btn-outlined">
-                💬 WhatsApp Inquiry
+                ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
               </a>
-              <a href="tel:${PHONE_NUMBER}" class="btn-ghost">📞 Call Us</a>
+              <a href="tel:${PHONE_NUMBER}" class="btn-ghost">${Icons.phone('btn-icon')} Call Us</a>
             </div>
           </div>
         `).join('')}
@@ -116,7 +116,7 @@ function renderCoursesPage(container) {
               Book Free Consultation
             </a>
             <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}" target="_blank" rel="noopener" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
-              💬 Talk on WhatsApp
+              ${Icons.whatsapp('btn-icon')} Talk on WhatsApp
             </a>
           </div>
         </div>

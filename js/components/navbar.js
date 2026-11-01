@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Navbar Component
+   XYZ CLASSES — Navbar Component
    ============================================================ */
 
-const PHONE_NUMBER = '+919999999999';
-const WHATSAPP_NUMBER = '919999999999';
-const WHATSAPP_MESSAGE = encodeURIComponent('Hi, I\'m interested in tuition at Purushottam Classes. Please share details.');
+const PHONE_NUMBER = '+91XXXXXXXXXX';
+const WHATSAPP_NUMBER = '91XXXXXXXXXX';
+const WHATSAPP_MESSAGE = encodeURIComponent('Hi, I\'m interested in tuition at XYZ Classes. Please share details.');
 
 const NAV_LINKS = [
   { label: 'Home', hash: '#home' },
@@ -26,9 +26,9 @@ function renderNavbar() {
 
   nav.innerHTML = `
     <div class="navbar__inner">
-      <a href="#home" class="navbar__brand" aria-label="Purushottam Classes Home">
+      <a href="#home" class="navbar__brand" aria-label="XYZ Classes Home">
         <div>
-          <div class="navbar__logo-text">Purushottam Classes</div>
+          <div class="navbar__logo-text">XYZ Classes</div>
           <div class="navbar__logo-sub">Since 2013</div>
         </div>
       </a>

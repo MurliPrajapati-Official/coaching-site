@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Courses Page Renderer
+   XYZ CLASSES — Courses Page Renderer
    ============================================================ */
 
 function renderCoursesPage(container) {
-  document.title = 'Courses — Class 1 to 12 Tuition | Purushottam Classes, Pune';
-  setMetaDescription('Explore academic courses for Class 1-12 at Purushottam Classes, Pune. CBSE, ICSE, IGCSE, NIOS, State Board coaching with experienced faculty. Mathematics, Science, English, Languages.');
+  document.title = 'Courses — Class 1 to 12 Tuition | XYZ Classes, Pune';
+  setMetaDescription('Explore academic courses for Class 1-12 at XYZ Classes, Pune. CBSE, ICSE, IGCSE, NIOS, State Board coaching with experienced faculty. Mathematics, Science, English, Languages.');
 
   container.innerHTML = `
     <section class="page-header">
@@ -92,7 +92,7 @@ function renderCoursesPage(container) {
               <a href="#contact" class="btn-primary" onclick="event.preventDefault();window.location.hash='#contact';">
                 Enroll in ${course.title} →
               </a>
-              <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in ${course.title} (${course.grades}) coaching at Purushottam Classes.`)}" 
+              <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in ${course.title} (${course.grades}) coaching at XYZ Classes.`)}" 
                  target="_blank" rel="noopener" class="btn-outlined">
                 ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
               </a>

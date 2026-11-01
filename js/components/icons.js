@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — SVG Icons Library
+   XYZ CLASSES — SVG Icons Library
    ============================================================ */
 
 const Icons = {

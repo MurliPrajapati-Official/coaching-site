@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Admin Dashboard
+   XYZ CLASSES — Admin Dashboard
    ============================================================ */
 
 const ADMIN_PASSWORD = 'purushottam2013';
@@ -7,7 +7,7 @@ let adminAuthenticated = false;
 let currentAdminTab = 'leads';
 
 function renderAdminPage(container) {
-  document.title = 'Admin Dashboard — Purushottam Classes';
+  document.title = 'Admin Dashboard — XYZ Classes';
 
   if (!adminAuthenticated) {
     renderAdminLogin(container);

@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Floating CTA Bar Component
+   XYZ CLASSES — Floating CTA Bar Component
    ============================================================ */
 
 function renderCtaBar() {
@@ -20,7 +20,7 @@ function renderCtaBar() {
     <a href="tel:${PHONE_NUMBER}"
        class="cta-float__btn cta-float__btn--call"
        aria-label="Call us"
-       title="Call Purushottam Classes"
+       title="Call XYZ Classes"
        id="float-call">
       ${Icons.phone('icon')}
     </a>

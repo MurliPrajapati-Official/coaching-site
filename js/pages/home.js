@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Homepage Renderer
+   XYZ CLASSES — Homepage Renderer
    ============================================================ */
 
 function renderHomePage(container) {
-  document.title = 'Best Tuition Classes in Pune | Purushottam Classes — Expert Coaching Since 2013';
-  setMetaDescription('Purushottam Classes offers expert coaching, home tuition, and competitive exam preparation in Pune. Small batches of 15, personalized attention, CBSE/ICSE/IGCSE support. Book free consultation.');
+  document.title = 'Best Tuition Classes in Pune | XYZ Classes — Expert Coaching Since 2013';
+  setMetaDescription('XYZ Classes offers expert coaching, home tuition, and competitive exam preparation in Pune. Small batches of 15, personalized attention, CBSE/ICSE/IGCSE support. Book free consultation.');
 
   container.innerHTML = `
     <!-- ═══ HERO ═══ -->
@@ -36,7 +36,7 @@ function renderHomePage(container) {
           </div>
           <div class="hero__visual animate-on-scroll">
             <div class="hero__visual-card">
-              <div style="font-size:var(--text-body-lg);font-weight:var(--weight-semibold);color:var(--color-obsidian);">Why Purushottam Classes?</div>
+              <div style="font-size:var(--text-body-lg);font-weight:var(--weight-semibold);color:var(--color-obsidian);">Why XYZ Classes?</div>
               <div class="hero__visual-stats">
                 <div class="hero__visual-item">
                   <div class="hero__visual-number" data-counter="10" data-suffix="+">0+</div>
@@ -123,7 +123,7 @@ function renderHomePage(container) {
       <div class="container">
         <div class="section-header section-header--center animate-on-scroll">
           <span class="section-header__label">Why Parents Choose Us</span>
-          <h2 class="section-header__title">The Purushottam Classes Difference</h2>
+          <h2 class="section-header__title">The XYZ Classes Difference</h2>
           <p class="section-header__subtitle">Trusted by hundreds of parents across Pune for quality education and measurable results.</p>
         </div>
         <div class="features-grid stagger-children">
@@ -213,7 +213,7 @@ function renderHomePage(container) {
         <div class="section-header section-header--center animate-on-scroll">
           <span class="section-header__label">Testimonials</span>
           <h2 class="section-header__title">What Parents & Students Say</h2>
-          <p class="section-header__subtitle">Real stories from families who trust Purushottam Classes with their children's education.</p>
+          <p class="section-header__subtitle">Real stories from families who trust XYZ Classes with their children's education.</p>
         </div>
         <div id="testimonials-container"></div>
       </div>

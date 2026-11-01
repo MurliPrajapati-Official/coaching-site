@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Home Tuition Page Renderer
+   XYZ CLASSES — Home Tuition Page Renderer
    ============================================================ */
 
 function renderTuitionPage(container) {
-  document.title = 'Home Tuition in Pune — Personalized Tutors | Purushottam Classes';
-  setMetaDescription('Home tuition services in Pune. Expert tutors at your doorstep — one-on-one learning, flexible timing, personalized study plans. CBSE, ICSE, IGCSE support. Book free trial at Purushottam Classes.');
+  document.title = 'Home Tuition in Pune — Personalized Tutors | XYZ Classes';
+  setMetaDescription('Home tuition services in Pune. Expert tutors at your doorstep — one-on-one learning, flexible timing, personalized study plans. CBSE, ICSE, IGCSE support. Book free trial at XYZ Classes.');
 
   container.innerHTML = `
     <section class="page-header">
@@ -172,7 +172,7 @@ function renderTuitionPage(container) {
             <a href="#contact" class="btn-primary btn-primary-inverse" onclick="event.preventDefault();window.location.hash='#contact';">
               Book Free Trial Session
             </a>
-            <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi, I am interested in home tuition services from Purushottam Classes. Please share details.')}" 
+            <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi, I am interested in home tuition services from XYZ Classes. Please share details.')}" 
                target="_blank" rel="noopener" class="btn-outlined" style="border-color:rgba(255,255,255,0.3);color:var(--color-snow);background:transparent;">
               ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
             </a>

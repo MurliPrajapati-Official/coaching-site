@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Lead Capture Form Component
+   XYZ CLASSES — Lead Capture Form Component
    ============================================================ */
 
 function renderLeadForm(containerId, options = {}) {

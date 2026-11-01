@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Testimonials Carousel Component
+   XYZ CLASSES — Testimonials Carousel Component
    ============================================================ */
 
 function renderTestimonialsCarousel(containerId) {

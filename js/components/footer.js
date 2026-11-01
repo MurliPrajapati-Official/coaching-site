@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Footer Component
+   XYZ CLASSES — Footer Component
    ============================================================ */
 
 function renderFooter() {
@@ -11,7 +11,7 @@ function renderFooter() {
     <div class="container">
       <div class="footer__inner">
         <div class="footer__about">
-          <div class="footer__brand-name">Purushottam Classes</div>
+          <div class="footer__brand-name">XYZ Classes</div>
           <p class="footer__description">
             Expert coaching and personalized tuition for students from Class 1 to 12, competitive exams, and language programs. Helping students excel since 2013.
           </p>
@@ -47,7 +47,7 @@ function renderFooter() {
           <div style="display:flex;flex-direction:column;gap:16px;">
             <div class="footer__contact-item">
               <span class="footer__contact-icon">${Icons.location('icon')}</span>
-              <span>Swapnashilp Apartment,<br>B.T. Kawade Road,<br>Pune, Maharashtra</span>
+              <span>XYZ Classes,<br>MG Road,<br>Pune, Maharashtra</span>
             </div>
             <div class="footer__contact-item">
               <span class="footer__contact-icon">${Icons.phone('icon')}</span>
@@ -63,7 +63,7 @@ function renderFooter() {
 
       <div class="footer__bottom">
         <div class="footer__copyright">
-          © ${new Date().getFullYear()} Purushottam Classes. All rights reserved.
+          © ${new Date().getFullYear()} XYZ Classes. All rights reserved.
         </div>
         <div class="footer__legal-links">
           <a href="#" class="footer__legal-link">Privacy Policy</a>

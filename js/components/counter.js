@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Animated Counter Component
+   XYZ CLASSES — Animated Counter Component
    ============================================================ */
 
 function initCounters() {

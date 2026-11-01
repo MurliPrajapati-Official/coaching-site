@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Competitive Exams Page Renderer
+   XYZ CLASSES — Competitive Exams Page Renderer
    ============================================================ */
 
 function renderExamsPage(container) {
-  document.title = 'Competitive Exam Coaching — NDA, CAT, CET, Railway | Purushottam Classes, Pune';
-  setMetaDescription('Competitive exam preparation in Pune — NDA coaching, CAT coaching, CET coaching, Railway exam preparation. Small batches, experienced faculty, proven strategies at Purushottam Classes.');
+  document.title = 'Competitive Exam Coaching — NDA, CAT, CET, Railway | XYZ Classes, Pune';
+  setMetaDescription('Competitive exam preparation in Pune — NDA coaching, CAT coaching, CET coaching, Railway exam preparation. Small batches, experienced faculty, proven strategies at XYZ Classes.');
 
   container.innerHTML = `
     <section class="page-header">
@@ -30,7 +30,7 @@ function renderExamsPage(container) {
                   <h2 class="exam-card__title">${exam.title}</h2>
                   <div class="exam-card__fullname">${exam.fullName}</div>
                 </div>
-                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in ${exam.title} coaching at Purushottam Classes.`)}" 
+                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in ${exam.title} coaching at XYZ Classes.`)}" 
                    target="_blank" rel="noopener" class="btn-primary" style="flex-shrink:0;">
                   Inquire Now →
                 </a>
@@ -87,7 +87,7 @@ function renderExamsPage(container) {
                 <a href="#contact" class="btn-primary" onclick="event.preventDefault();window.location.hash='#contact';">
                   Start ${exam.title} Preparation →
                 </a>
-                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I want to know more about ${exam.title} (${exam.fullName}) coaching at Purushottam Classes.`)}" 
+                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I want to know more about ${exam.title} (${exam.fullName}) coaching at XYZ Classes.`)}" 
                    target="_blank" rel="noopener" class="btn-outlined">
                   ${Icons.whatsapp('btn-icon')} WhatsApp Inquiry
                 </a>

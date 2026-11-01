@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — About Page Renderer
+   XYZ CLASSES — About Page Renderer
    ============================================================ */
 
 function renderAboutPage(container) {
-  document.title = 'About Us — Purushottam Classes | Trusted Coaching Since 2013, Pune';
-  setMetaDescription('Learn about Purushottam Classes — a trusted coaching institute in Pune since 2013. Our mission, values, experienced faculty, and commitment to quality education for every student.');
+  document.title = 'About Us — XYZ Classes | Trusted Coaching Since 2013, Pune';
+  setMetaDescription('Learn about XYZ Classes — a trusted coaching institute in Pune since 2013. Our mission, values, experienced faculty, and commitment to quality education for every student.');
 
   container.innerHTML = `
     <section class="page-header">
@@ -14,7 +14,7 @@ function renderAboutPage(container) {
           <span class="page-header__breadcrumb-sep">›</span>
           <span>About Us</span>
         </div>
-        <h1 class="page-header__title">About Purushottam Classes</h1>
+        <h1 class="page-header__title">About XYZ Classes</h1>
         <p class="page-header__subtitle">A decade of dedicated teaching. Hundreds of success stories. One mission — to help every student reach their full academic potential.</p>
       </div>
     </section>
@@ -29,13 +29,13 @@ function renderAboutPage(container) {
               <h2 class="section-header__title" style="font-size:var(--text-heading);">Built on a Belief That Every Student Can Excel</h2>
             </div>
             <p class="about-story__text">
-              Purushottam Classes was founded in 2013 with a simple yet powerful belief — that every student, regardless of their starting point, can achieve academic excellence with the right guidance, environment, and support.
+              XYZ Classes was founded in 2013 with a simple yet powerful belief — that every student, regardless of their starting point, can achieve academic excellence with the right guidance, environment, and support.
             </p>
             <p class="about-story__text">
-              What began as a small coaching center on B.T. Kawade Road in Pune has grown into a trusted institution known for its personalized approach to education. Over the years, we have helped hundreds of students across multiple boards improve their academic performance, build confidence, and develop a genuine love for learning.
+              What began as a small coaching center on MG Road in Pune has grown into a trusted institution known for its personalized approach to education. Over the years, we have helped hundreds of students across multiple boards improve their academic performance, build confidence, and develop a genuine love for learning.
             </p>
             <p class="about-story__text">
-              Our founder recognized early on that large classrooms often fail students — bright minds get lost in the crowd, individual doubts go unresolved, and personal attention becomes a luxury. That's why Purushottam Classes was built around the principle of <strong>small batches limited to 15 students</strong>, ensuring every child receives the attention they deserve.
+              Our founder recognized early on that large classrooms often fail students — bright minds get lost in the crowd, individual doubts go unresolved, and personal attention becomes a luxury. That's why XYZ Classes was built around the principle of <strong>small batches limited to 15 students</strong>, ensuring every child receives the attention they deserve.
             </p>
           </div>
           <div class="about-story__visual animate-on-scroll">
@@ -104,7 +104,7 @@ function renderAboutPage(container) {
         <div class="about-timeline" style="margin-top:var(--spacing-40);max-width:640px;margin-left:auto;margin-right:auto;">
           <div class="about-timeline__items">
             ${[
-              { year: '2013', text: 'Purushottam Classes founded on B.T. Kawade Road, Pune, with a focus on personalized coaching for school students.' },
+              { year: '2013', text: 'XYZ Classes founded on MG Road, Pune, with a focus on personalized coaching for school students.' },
               { year: '2015', text: 'Expanded to cover multiple boards — CBSE, ICSE, and State Board. Introduced home tuition services.' },
               { year: '2017', text: 'Added competitive exam coaching (NDA, CET) and language learning programs (French, Sanskrit).' },
               { year: '2019', text: 'Reached 200+ students mentored. Introduced higher education support for B.Ed and M.Ed candidates.' },
@@ -128,7 +128,7 @@ function renderAboutPage(container) {
         <div class="panel-dark" style="padding:var(--spacing-48);text-align:center;">
           <h3 style="font-size:var(--text-heading);margin-bottom:var(--spacing-12);">Be Part of Our Story</h3>
           <p style="color:var(--color-ash);font-size:var(--text-body-lg);max-width:500px;margin:0 auto var(--spacing-24);">
-            Join the growing family of students and parents who trust Purushottam Classes for quality education.
+            Join the growing family of students and parents who trust XYZ Classes for quality education.
           </p>
           <div style="display:flex;gap:var(--spacing-16);justify-content:center;flex-wrap:wrap;">
             <a href="#contact" class="btn-primary btn-primary-inverse" onclick="event.preventDefault();window.location.hash='#contact';">

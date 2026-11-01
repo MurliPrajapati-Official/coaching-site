@@ -1,10 +1,10 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Contact Page Renderer
+   XYZ CLASSES — Contact Page Renderer
    ============================================================ */
 
 function renderContactPage(container) {
-  document.title = 'Contact Us — Purushottam Classes | Tuition in Pune, B.T. Kawade Road';
-  setMetaDescription('Contact Purushottam Classes — tuition classes on B.T. Kawade Road, Pune. Call, WhatsApp, or visit us. Book free academic consultation for your child today.');
+  document.title = 'Contact Us — XYZ Classes | Tuition in Pune, MG Road';
+  setMetaDescription('Contact XYZ Classes — tuition classes on MG Road, Pune. Call, WhatsApp, or visit us. Book free academic consultation for your child today.');
 
   container.innerHTML = `
     <section class="page-header">
@@ -29,9 +29,9 @@ function renderContactPage(container) {
               <div class="contact-info__content">
                 <div class="contact-info__label">Visit Us</div>
                 <div class="contact-info__value">
-                  <a href="https://www.google.com/maps/place/Purushottam+Classes/@18.5116312,73.9070718,18.25z/data=!4m6!3m5!1s0x3bc2c1bf5116007f:0xba3e1440fcf819ec!8m2!3d18.5116312!4d73.9070718!16s%2Fg%2F11l663kfc4?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-                    Swapnashilp Apartment,<br>
-                    B.T. Kawade Road,<br>
+                  <a href="https://www.google.com/maps/place/India" target="_blank" rel="noopener">
+                    XYZ Classes,<br>
+                    MG Road,<br>
                     Pune, Maharashtra
                   </a>
                 </div>
@@ -65,7 +65,7 @@ function renderContactPage(container) {
               <div class="contact-info__content">
                 <div class="contact-info__label">Email</div>
                 <div class="contact-info__value">
-                  <a href="mailto:info@purushottamclasses.com">info@purushottamclasses.com</a>
+                  <a href="mailto:info@xyzclasses.com">info@xyzclasses.com</a>
                 </div>
               </div>
             </div>
@@ -107,14 +107,14 @@ function renderContactPage(container) {
         <!-- Google Maps -->
         <div class="contact-map animate-on-scroll" id="contact-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3980998347104!2d73.90488311542718!3d18.511631202517865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bf5116007f%3A0xba3e1440fcf819ec!2sPurushottam%20Classes!5e0!3m2!1sen!2sin!4v1718210000000!5m2!1sen!2sin"
+            src="https://maps.google.com/maps?q=India&t=&z=5&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Purushottam Classes Location — B.T. Kawade Road, Pune">
+            title="XYZ Classes Location — MG Road, Pune">
           </iframe>
         </div>
       </div>

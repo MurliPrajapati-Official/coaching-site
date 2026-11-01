@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Course Data
+   XYZ CLASSES — Course Data
    ============================================================ */
 
 const COURSES_DATA = [

@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Hash-Based SPA Router
+   XYZ CLASSES — Hash-Based SPA Router
    ============================================================ */
 
 const ROUTES = {

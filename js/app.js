@@ -1,5 +1,5 @@
 /* ============================================================
-   PURUSHOTTAM CLASSES — Main App Initialization
+   XYZ CLASSES — Main App Initialization
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

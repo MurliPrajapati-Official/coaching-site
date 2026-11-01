@@ -2,7 +2,7 @@
    XYZ CLASSES — Admin Dashboard
    ============================================================ */
 
-const ADMIN_PASSWORD = 'purushottam2013';
+const ADMIN_PASSWORD = 'changeme'; // set a real password before deploying
 let adminAuthenticated = false;
 let currentAdminTab = 'leads';
 
